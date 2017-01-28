@@ -1,11 +1,18 @@
 package crudoperation;
 
+import com.productdetails.ProductDetails;
+
 public abstract class AbstractProductOperation {
 
 	
 	
-	public void addProduct(ProductDetails p);
-	public boolean removeProduct(ProductDetails p);
-	public boolean updateProduct(ProductDetails p);
-	public boolean retriveProduct(ProductDetails p);
+	public abstract boolean addProduct(ProductDetails p);
+	public abstract boolean removeProduct(String productName);
+	public abstract boolean retriveProduct(String prodName);
+	public abstract boolean removeProduct(int id);
+	public abstract boolean updateProduct(int prodId);
+	public abstract boolean updateProduct(String prodName);
+	
+	
+	
 }
