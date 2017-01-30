@@ -5,7 +5,7 @@
 <hibernate-mapping>
     <class name="com.productdetails.ProductDetails" table="producttable">
         <id name="product_Id" type="integer" column="ID">
-            <generator class="native" />
+            <generator class="increment" />
         </id>
         <property name="product_Name" type="string" column="NAME" not-null="true" />
         <property name="product_Price" type="double" column="PRICE" not-null="true" />
